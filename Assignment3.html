@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUP ADMISSION</title>
+</head>
+<body>
+<form method="post">
+
+<h1 ><font color="green"><marquee scrollamount="15"> WE ARE OPEN FOR NEW ADMISSION NOW!!</marquee></font></h1>
+
+<hr>
+
+<h2>CONTACT INFORMATION</h2>
+
+Name: <br>
+<input type="text" name="applicant_name" placeholder="enter your full name" required/><br><br>
+
+Father Name:<br>
+<input type="text" name="applicant_Fname" placeholder="enter your father's name" required/><br><br>
+
+Select Your Gender<br>
+male<input type="radio" name="gender" value="male" required>  
+female<input type="radio" name="gender" value="female">
+others<input type="radio" name="gender" value="other"><br><BR>
+
+D.O.B. 
+<br><input type="date" placeholder="MM/DD/YYYY" REQUIRED/><br><br>
+
+Contact Number: <br>
+<input type="text" pattern="\d{10}" maxlength="10" name="contact number"> <br><br>
+
+Adhaar Number:<br>
+<input type="text"  pattern="\d{12}" maxlength="12" required/><br><br>
+
+Upload Your Adhaar Card Here:<br>
+<input type="file" name="ID proof" required/>
+
+<hr>
+
+<h2>QUALIFICATION</H2>
+
+Previous Education: <br>
+<select name="applied_course" required>
+<option value=" "> Select option </option>
+<option value="+2"> 12th </option>
+<option value="under-graduation"> under-graduation </option>
+<option value="post-graduation">post-graduation </option>
+<option value="UG-Diploma">UG-Diploma</option>
+<option value="PG-Diplomma">PG-Diplomma</option>
+</select> <br><br>
+
+
+Marks: <br>
+<input type="number" name="marks" placeholder="enter percentage only" max="100" required/> <br><br>
+
+Upload Your Marksheets Here: <br>
+<input type="file" name="marksheet" required/>
+
+<hr>
+
+<h2>COURSES AVAILABLE TO APPLY</H2>
+
+Select the Course You Want to Apply For:
+<input type="list" list="courses" name="applied course" placeholder="click here" required/>
+<datalist id="courses">
+<option value="BCA">
+<option value="BBA">
+<option value="MCA">
+<option value="MBA">
+<option value="BA">
+<option value="MA">
+<option value="B.Com">
+<option value="M.Com">
+</DATALIST>
+
+<br><br>
+
+<button type="reset">reset</button>
+<input type="submit"/>
+</p>
+</form>
+
+    
+</body>
+</html>
